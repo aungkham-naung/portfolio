@@ -5,6 +5,7 @@ import Footer from "./sections/Footer";
 import Home from "./sections/Home";
 import Section from "./sections/Section";
 import Contact from "./features/Contact";
+import ProjectDiv from "./sections/ProjectDiv";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         <Section>
           <Home />
         </Section>
-        <Section></Section>
+        <Section>
+          <ProjectDiv />
+        </Section>
         <Section></Section>
         <Section>
           <Contact />
