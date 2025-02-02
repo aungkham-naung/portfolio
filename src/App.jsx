@@ -6,6 +6,7 @@ import Home from "./sections/Home";
 import Section from "./sections/Section";
 import Contact from "./features/Contact";
 import ProjectDiv from "./sections/ProjectDiv";
+import Skills from "./features/Skills";
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         <Section>
           <ProjectDiv />
         </Section>
-        <Section></Section>
+        <Section>
+          <Skills />
+        </Section>
         <Section>
           <Contact />
         </Section>
