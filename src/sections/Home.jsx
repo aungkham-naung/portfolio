@@ -7,7 +7,7 @@ function Home() {
       <h2 className="text-5xl mt-10">
         Software Engineer | Full Stack Developer
       </h2>
-      <SocialIconDiv />
+      <SocialIconDiv size={"text-5xl"} />
     </div>
   );
 }
