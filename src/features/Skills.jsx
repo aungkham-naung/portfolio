@@ -31,34 +31,30 @@ function Skills() {
     }
   ];
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="flex gap-6">
-        <div className="w-1/3">
-          <h3 className="text-xl font-bold mb-4">Skills</h3>
-          <div className="grid grid-cols-4 gap-4">
+    <div className="container mx-auto px-4 py-8 min-h-screen flex flex-wrap">
+      <div className="flex gap-6 min-h-screen">
+        <div className="w-1/3 flex flex-col justify-center align-middle">
+          <h2 className="text-5xl font-bold mb-4">Skills</h2>
+          <div className="grid grid-cols-2 gap-4">
             {skills.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center">
+              <div key={index} className="flex flex-col items-center flex-wrap">
                 <div className="text-3xl">{skill.icon}</div>
-                <span className="mt-2 text-sm">{skill.name}</span>
+                <span className="mb-6 text-md">{skill.name}</span>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="w-2/3">
-          <h3 className="text-xl font-bold mb-4">Certifications</h3>
-          <div className="grid grid-cols-2 gap-4">
+        <div className="w-2/3 min-h-screen flex flex-col justify-center flex-wrap">
+          <h2 className="text-5xl font-bold mb-4">Certifications</h2>
+          <div className="grid grid-cols-2 gap-6">
             {certs.map((cert, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center border p-2 rounded"
-              >
+              <div key={index} className="flex flex-col items-center ">
                 <img
                   src={cert.imageUrl}
                   alt={cert.name}
-                  className="w-full h-auto object-contain mb-2"
+                  className="w-full h-auto object-contain mb-3"
                 />
-                <span className="text-sm">{cert.name}</span>
               </div>
             ))}
           </div>

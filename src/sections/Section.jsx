@@ -1,7 +1,11 @@
 // Section
 
-function Section({ children }) {
-  return <section className="section min-h-screen w-full">{children}</section>;
+function Section({ id, style = "", children }) {
+  return (
+    <section id={id} className={`section ${style} w-full`}>
+      {children}
+    </section>
+  );
 }
 
 export default Section;
