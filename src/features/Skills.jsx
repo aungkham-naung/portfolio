@@ -34,19 +34,21 @@ function Skills() {
     <div className="container mx-auto px-4 py-8 min-h-screen flex flex-wrap">
       <div className="flex gap-6 min-h-screen">
         <div className="w-1/3 flex flex-col justify-center align-middle">
-          <h2 className="text-5xl font-bold mb-4">Skills</h2>
+          <h2 className="text-5xl mb-8">Skills</h2>
           <div className="grid grid-cols-2 gap-4">
             {skills.map((skill, index) => (
               <div key={index} className="flex flex-col items-center flex-wrap">
                 <div className="text-3xl">{skill.icon}</div>
-                <span className="mb-6 text-md">{skill.name}</span>
+                <span className="mb-6 text-md font-bold text-blue-50">
+                  {skill.name}
+                </span>
               </div>
             ))}
           </div>
         </div>
 
         <div className="w-2/3 min-h-screen flex flex-col justify-center flex-wrap">
-          <h2 className="text-5xl font-bold mb-4">Certifications</h2>
+          <h2 className="text-5xl mb-4">Certifications</h2>
           <div className="grid grid-cols-2 gap-6">
             {certs.map((cert, index) => (
               <div key={index} className="flex flex-col items-center ">

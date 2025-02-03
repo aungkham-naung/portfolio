@@ -5,6 +5,7 @@ import SocialIconDiv from "./SocialIconDiv";
 function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const disabled = email === "" || message === "";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,16 +36,15 @@ function Contact() {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      {/* Wrap the heading and form in a container with a common max width */}
-      <div className="w-full max-w-lg md:max-w-2xl mx-auto">
+    <div className="container mx-auto p-4 mb-30 bg-neutral-00">
+      <div className="w-full max-w-lg md:max-w-3xl mx-auto">
         <h2 className="text-5xl mb-8">Contact me</h2>
         <form
           onSubmit={handleSubmit}
-          className="w-full flex flex-col"
+          className="w-full flex flex-col border-zinc-400 border-2 px-4 py-4 rounded-2xl"
           method="POST"
         >
-          <label htmlFor="email" className="mt-10 mb-1">
+          <label htmlFor="email" className=" mb-1 text-white font-bold">
             Your email
           </label>
           <input
@@ -54,14 +54,14 @@ function Contact() {
             value={email}
             placeholder="name@aol.com"
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full border px-3 py-2 rounded-md"
+            className="w-full border px-3 py-2 rounded-md bg-neutral-900 text-zinc-400 focus:outline-none focus:ring-2 focus:ring-white"
           />
 
-          <label htmlFor="message" className="mt-10 mb-1">
+          <label htmlFor="message" className="mt-10 mb-1 text-white font-bold">
             Your Message
           </label>
           <textarea
-            className="w-full border px-3 py-2 rounded-md resize-y h-40"
+            className="w-full border px-3 py-2 rounded-md resize-y h-40 bg-neutral-900 text-zinc-400 focus:outline-none focus:ring-2 focus:ring-white"
             value={message}
             name="message"
             id="message"
@@ -70,7 +70,9 @@ function Contact() {
           ></textarea>
 
           <button
-            className="inline-flex justify-start border-2 w-fit px-4 py-2 mt-10 rounded-md bg-blue-600 text-white hover:bg-blue-500"
+            className="inline-flex justify-start border-2 w-fit px-4 py-2 mt-10 rounded-md  bg-zinc-800 text-neutral-400 hover:bg-zinc-200
+            disabled:bg-zinc-900 disabled:cursor-not-allowed"
+            disabled={disabled}
             type="submit"
           >
             Send Message

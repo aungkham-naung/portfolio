@@ -3,8 +3,8 @@
 function FooterContent() {
   const year = new Date().getFullYear();
   return (
-    <div>
-      <p>Aung Kham Naung &copy; {year}</p>
+    <div className="ml-10">
+      <p className="text-white">Aung Kham Naung &copy; {year}</p>
     </div>
   );
 }

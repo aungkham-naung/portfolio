@@ -40,8 +40,10 @@ function DotNav({ sections }) {
           onClick={() =>
             document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
           }
-          className={`w-4 h-4 rounded-full transition-colors 
-            ${activeSection === id ? "bg-blue-500" : "bg-gray-300"}`}
+          className={`w-4 h-4 rounded-full  transition-transform 
+            duration-200 
+            hover:scale-150
+            ${activeSection === id ? "bg-neutral-500" : "bg-gray-50"}`}
           aria-label={`Scroll to ${id} section`}
         ></button>
       ))}

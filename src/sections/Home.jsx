@@ -3,8 +3,10 @@ import SocialIconDiv from "../features/SocialIconDiv";
 function Home() {
   return (
     <div className="flex flex-col flex-wrap items-center text-center justify-center min-h-screen ">
-      <h1 className="text-7xl">Hey there! I am Aung Kham Naung</h1>
-      <h2 className="text-5xl mt-10">
+      <h1 className="text-7xl">
+        Hey there! I am <span className="text-slate-400">Aung Kham Naung</span>
+      </h1>
+      <h2 className="text-5xl mt-10 italic">
         Software Engineer | Full Stack Developer
       </h2>
       <SocialIconDiv size={"text-5xl"} />

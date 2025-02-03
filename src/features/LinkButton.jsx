@@ -7,7 +7,7 @@ function LinkButton({ link, children }) {
   return (
     <button
       onClick={handleClick}
-      className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors"
+      className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-zinc-500 transition-colors"
     >
       {children}{" "}
     </button>
