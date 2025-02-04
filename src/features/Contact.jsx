@@ -36,7 +36,7 @@ function Contact() {
   };
 
   return (
-    <div className="container mx-auto p-4 mb-15 flex flex-col items-center justify-center">
+    <div className="container mx-auto p-4 mb-20 flex flex-col items-center justify-center">
       <div className="w-full max-w-lg md:max-w-3xl flex flex-col  ">
         <h2 className="text-5xl mb-8 ju">Contact me</h2>
         <form
