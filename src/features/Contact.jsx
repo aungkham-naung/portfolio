@@ -36,9 +36,9 @@ function Contact() {
   };
 
   return (
-    <div className="container mx-auto p-4 mb-30 bg-neutral-00">
-      <div className="w-full max-w-lg md:max-w-3xl mx-auto">
-        <h2 className="text-5xl mb-8">Contact me</h2>
+    <div className="container mx-auto p-4 mb-30 flex flex-col items-center justify-center min-h-screen">
+      <div className="w-full max-w-lg md:max-w-3xl flex flex-col  ">
+        <h2 className="text-5xl mb-8 ju">Contact me</h2>
         <form
           onSubmit={handleSubmit}
           className="w-full flex flex-col border-zinc-400 border-2 px-4 py-4 rounded-2xl"
@@ -78,7 +78,9 @@ function Contact() {
             Send Message
           </button>
         </form>
-        <SocialIconDiv size={"text-3xl"} />
+        <div className="flex justify-center">
+          <SocialIconDiv size={"text-3xl"} />
+        </div>
       </div>
     </div>
   );
