@@ -43,7 +43,7 @@ function DotNav({ sections }) {
           className={`w-4 h-4 rounded-full  transition-transform 
             duration-200 
             hover:scale-150
-            ${activeSection === id ? "bg-neutral-500" : "bg-white"}`}
+            ${activeSection === id ? "bg-indigo-500" : "bg-white"}`}
           aria-label={`Scroll to ${id} section`}
         ></button>
       ))}

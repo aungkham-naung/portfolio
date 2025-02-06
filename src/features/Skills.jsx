@@ -31,10 +31,15 @@ function Skills() {
     }
   ];
   return (
-    <div className="container mx-auto px-4 py-8 min-h-screen flex flex-wrap">
+    <div className="container mx-auto px-2 py-8s flex flex-col">
+      <div className="flex justify-start mt-10">
+        <h2 className="text-5xl  text-center text-blue-50 ">
+          Skills & Certifications
+        </h2>
+      </div>
+
       <div className="flex gap-6 min-h-screen">
         <div className="w-1/3 flex flex-col justify-center align-middle">
-          <h2 className="text-5xl mb-8">Skills</h2>
           <div className="grid grid-cols-2 gap-4">
             {skills.map((skill, index) => (
               <div key={index} className="flex flex-col items-center flex-wrap">
@@ -48,7 +53,6 @@ function Skills() {
         </div>
 
         <div className="w-2/3 min-h-screen flex flex-col justify-center flex-wrap">
-          <h2 className="text-5xl mb-4">Certifications</h2>
           <div className="grid grid-cols-2 gap-6">
             {certs.map((cert, index) => (
               <div key={index} className="flex flex-col items-center ">
