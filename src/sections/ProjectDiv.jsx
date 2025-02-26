@@ -4,6 +4,15 @@ function ProjectDiv() {
   const projects = [
     {
       id: 1,
+      title: "StoreIt",
+      description:
+        "StoreIt is a secure cloud storage solution designed to help individuals store, manage, back up, and share files seamlessly across all devices. With a user-friendly interface and robust functionality, StoreIt ensures smooth file organization and accessibility anytime, anywhere.",
+      imageUrl: "/project_ss/drive.png",
+      github: "https://github.com/aungkham-naung/storage-drive",
+      live: "https://storage-drive-delta.vercel.app/sign-in"
+    },
+    {
+      id: 2,
       title: "Check-in Manager",
       description:
         "Easily manage cabins, bookings, and guest data from one dashboard. Set up rooms, handle check-ins/check-outs, confirm payments, and monitor daily stats—all from a single, shareable link. A convenient way for hotel staff to stay on top of every reservation and guest detail.",
@@ -12,7 +21,7 @@ function ProjectDiv() {
       live: "https://hotel-management-application-mu.vercel.app/"
     },
     {
-      id: 2,
+      id: 3,
       title: "YelpCamp",
       description:
         "Discover and rate campgrounds, add your own with images, and share reviews—all in one place. An interactive map projects exploring locations, and secure user accounts keep your data private. Perfect for outdoor enthusiasts looking to find, create, and discuss the best camping spots.",
@@ -21,7 +30,7 @@ function ProjectDiv() {
       live: "https://yelp-camp-01ps.onrender.com"
     },
     {
-      id: 3,
+      id: 4,
       title: "usePopcorn",
       description:
         "An application built with dynamic and interactive platform for movie enthusiasts to explore, catalog, and manage their favorite films. It fetches real-time movie data from the OMDb API, offering users an engaging and responsive experience for browsing, reviewing, and tracking watched movies.",
@@ -29,20 +38,12 @@ function ProjectDiv() {
       github: "https://github.com/aungkham-naung/movie-list-application"
     },
     {
-      id: 4,
+      id: 5,
       title: "Pizza Menu",
       description:
         "Application that lets users easily browse, customize, and order pizzas from an online menu. It provides an interactive and user-friendly interface, allowing users to see real-time availability (sold out or available items), add pizzas to the cart, and prioritize items with a surcharge.",
       imageUrl: "/project_ss/menu.png",
       github: "https://github.com/aungkham-naung/pizza-menu"
-    },
-    {
-      id: 5,
-      title: "World Wise",
-      description:
-        "Designed for travel enthusiasts to record and visualize their travel history seamlessly. This app also offers an interactive and smooth user experience, allowing users to track their journeys, view locations on an interactive map, and manage their travel logs effortlessly.",
-      imageUrl: "/project_ss/travel.png",
-      github: "https://github.com/aungkham-naung/travel-diary"
     },
     {
       id: 6,
